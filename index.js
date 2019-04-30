@@ -41,9 +41,10 @@ function addUpTo(arr, n) {
 }
 
 function maxOf(arr) {
+  let returnValue = addUpTo(arr.slice(1))
   if (arr.length > 1) {
-    if (addUpTo(arr.slice(1)) >= arr[0]) {
-      return addUpTo(arr.slice(1))
+    if (returnValue >= arr[0]) {
+      return returnValue
     } else {
       return arr[0]
     }
