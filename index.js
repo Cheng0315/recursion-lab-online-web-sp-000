@@ -42,9 +42,12 @@ function addUpTo(arr, n) {
 
 function maxOf(arr) {
 
-  if (arr.length === 0) {
-    return arr[0]
+  if (arr[0] >= arr[1]) {
+    arr.splice(1, 1)
   } else {
-    return Math.max(array.shift(), max(array)
+    arr.splice(0, 1)
   }
+
+  return maOf(arr)
+  
 }
