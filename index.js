@@ -42,15 +42,9 @@ function addUpTo(arr, n) {
 
 function maxOf(arr) {
 
-
-  if (arr.length > 1) {
-    let returnValue = addUpTo(arr.slice(1))
-    if (returnValue >= arr[0]) {
-      return returnValue
-    } else {
-      return arr[0]
-    }
-  } else {
+  if (arr.length === 0) {
     return arr[0]
+  } else {
+    return Math.max(array.shift(), max(array)
   }
 }
