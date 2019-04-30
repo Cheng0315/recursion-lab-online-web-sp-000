@@ -39,3 +39,15 @@ function addUpTo(arr, n) {
     return arr[0]
   }
 }
+
+function maxOf(arr) {
+  if (arr.length > 1) {
+    if (addUpTo(arr.slice(1)) >= arr[0]) {
+      return addUpTo(arr, n-1)
+    } else {
+      return arr[0]
+    }
+  } else {
+    return arr[0]
+  }
+}
