@@ -34,7 +34,7 @@ function isPalindrome(str) {
 function addUpTo(n) {
 
   if (n > 1) {
-    addUpTo(n-1) + n
+    return addUpTo(n-1) + n
   } else {
     return 1
   }
