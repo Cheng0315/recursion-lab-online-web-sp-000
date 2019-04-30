@@ -49,5 +49,5 @@ function maxOf(arr) {
   }
 
   return maOf(arr)
-  
+
 }
