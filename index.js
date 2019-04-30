@@ -31,11 +31,11 @@ function isPalindrome(str) {
   return false
 }
 
-function addUpTo(n) {
+function addUpTo(arr, n) {
 
-  if (n > 1) {
-    return addUpTo(n-1) + n
+  if (n > 0) {
+    return addUpTo(arr, n-1) + arr[n]
   } else {
-    return 1
+    return arr[0]
   }
 }
