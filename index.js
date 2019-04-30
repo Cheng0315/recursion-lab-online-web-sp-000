@@ -48,6 +48,6 @@ function maxOf(arr) {
     arr.splice(0, 1)
   }
 
-  return maOf(arr)
+  return maxOf(arr)
 
 }
