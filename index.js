@@ -64,5 +64,9 @@ function includesNumber(arr, num) {
     return true
   }
 
+  if (arr.length > 0) {
+    arr.splice(0, 1)
+  }
+
   return includesNumber(arr, num)
 }
