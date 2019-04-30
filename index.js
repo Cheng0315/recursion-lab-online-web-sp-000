@@ -53,5 +53,6 @@ function maxOf(arr) {
   }
 
   return maxOf(arr)
-
 }
+
+includesNumber()
