@@ -43,7 +43,7 @@ function addUpTo(arr, n) {
 function maxOf(arr) {
   if (arr.length > 1) {
     if (addUpTo(arr.slice(1)) >= arr[0]) {
-      return addUpTo(arr)
+      return addUpTo(arr.slice(1))
     } else {
       return arr[0]
     }
