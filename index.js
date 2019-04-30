@@ -61,7 +61,7 @@ function includesNumber(arr, num) {
   }
 
   if (arr[0] === num) {
-    return true)
+    return true
   }
 
   return includesNumber(arr, num)
