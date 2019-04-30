@@ -55,4 +55,14 @@ function maxOf(arr) {
   return maxOf(arr)
 }
 
-includesNumber()
+function includesNumber(arr, num) {
+  if (arr.length === 0) {
+    return false
+  }
+
+  if (arr[0] === num) {
+    return true)
+  }
+
+  return includesNumber(arr, num)
+}
